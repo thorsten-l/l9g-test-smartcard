@@ -73,6 +73,9 @@ public class L9gTestSmartcard
             // In this format the card uid/serial is stored in our directory service
             System.out.println( "Card Serial: " + bytesToLongLittleEndian( uidBytes ) );
 
+            // remove active sessions on card
+            card.disconnect( true );
+            
             do
             {
               log.debug( "Waiting for card removal..." );
