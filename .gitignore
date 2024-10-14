@@ -1,0 +1,15 @@
+target/
+build/
+private/
+
+nb-configuration.xml
+
+*.bak
+*~
+
+.DS_Store
+Thumbs.db
+
+rebel.xml
+.rebel.xml*
+.idea/
